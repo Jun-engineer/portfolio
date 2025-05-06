@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Jun Nammoku | Portfolio</title>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+    }
+    .section {
+      padding: 60px 0;
+    }
+    footer {
+      background: #343a40;
+      color: #fff;
+      padding: 20px 0;
+      text-align: center;
+    }
+    /* Scroll to Top Button */
+    #scrollTopBtn {
+      position: fixed;
+      bottom: 40px;
+      right: 40px;
+      display: none;
+      z-index: 100;
+      border: none;
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+      font-size: 24px;
+    }
+    /* Project Card */
+    .card-img-top {
+      max-height: 300px;
+      object-fit: cover;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Responsive Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">Jun Nammoku</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#projects">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- About Section -->
+  <section id="about" class="section">
+    <div class="container text-center">
+      <h2>About Me</h2>
+      <p class="lead">
+        I'm Jun Nammoku, cloud engineer passionate about creating web applications.
+      </p>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="section bg-light">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2>Projects</h2>
+        <p class="lead">Here are some projects I've worked on.</p>
+      </div>
+      <div class="row">
+        <!-- Project Card 1 -->
+        <div class="col-12">
+          <div class="card mb-4 shadow-sm">
+            <img src="./photo/bar.jpg" class="card-img-top" alt="Japanese Bar Homepage">
+            <div class="card-body">
+              <h5 class="card-title">Japanese Bar Homepage</h5>
+              <p class="card-text">
+                Language: Next.js (JavaScript) / AWS CDK (TypeScript)<br>
+                Hosting: AWS S3 / Amazon CloudFront<br>
+                Features: Delivers a high‑performance, SEO‑friendly static website with modern, responsive design and globally distributed assets via AWS CloudFront, all provisioned and managed through infrastructure as code with AWS CDK.<br>
+              </p>
+              <a href="https://d207y99b8y9l85.cloudfront.net/" class="btn btn-primary" target="_blank" rel="noopener noreferrer">Visit Web App</a>
+            </div>
+          </div>
+        </div>
+        <!-- Project Card 2 -->
+        <div class="col-12">
+          <div class="card mb-4 shadow-sm">
+            <img src="./photo/inventory_management_system.jpg" class="card-img-top" alt="Inventory / Order Management System">
+            <div class="card-body">
+              <h5 class="card-title">Inventory / Order / Cost Management System</h5>
+              <p class="card-text">
+                Language: Next.js (TypeScript) / Gin (Golang)<br>
+                Database: PostgreSQL<br>
+                Hosting: Vercel (Frontend) / GCP CloudRun (Backend) / Neon (Database)<br>
+                Features: Provides a multi‑tenant platform for enterprise inventory and order management with real‑time stock tracking, inter‑company order workflows, and integrated cost analysis dashboards.<br>
+              </p>
+              <a href="https://inventory-management-sooty-zeta.vercel.app" class="btn btn-primary" target="_blank" rel="noopener noreferrer">Visit Web App</a>
+            </div>
+          </div>
+        </div>
+        <!-- Project
+        <div class="col-12">
+          <div class="card mb-4 shadow-sm">
+            <img src="https://via.placeholder.com/350x200" class="card-img-top" alt="Project 4">
+            <div class="card-body">
+              <h5 class="card-title">EC Site Price Tracker & Alert</h5>
+              <p class="card-text">
+                Language: Next.js (TypeScript) / FastAPI (Python)<br>
+                Database: PostgreSQL<br>
+                Hosting: Vercel (Frontend) / GCP CloudRun (Backend) / Neon (Database)<br>
+                Features: Track price fluctuations on EC sites and notify users when the price falls below the target, optimizing purchase timing.<br>
+              </p>
+              <a href="https://example.com/project3" class="btn btn-primary" target="_blank" rel="noopener noreferrer">Visit Web App</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12">
+          <div class="card mb-4 shadow-sm">
+            <img src="https://via.placeholder.com/350x200" class="card-img-top" alt="Attendance Management System">
+            <div class="card-body">
+              <h5 class="card-title">Attendance Management System</h5>
+              <p class="card-text">
+                Language: Next.js (TypeScript) / SpringBoot (Java)<br>
+                Database: OracleDB<br>
+                Hosting: Vercel (Frontend) / GCP CloudRun (Backend) / OracleDB (Database)<br>
+                Features: Attendance Management<br>
+              </p>
+              <a href="https://example.com/project4" class="btn btn-primary" target="_blank" rel="noopener noreferrer">Visit Web App</a>
+            </div>
+          </div>
+        </div>
+        -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section">
+    <div class="container text-center">
+      <h2>Contact</h2>
+      <p class="lead">I'd love to hear from you!</p>
+      <p>
+        <!-- Email -->
+        <a href="mailto:jun.drums.1102@gmail.com" class="mx-3" title="Email">
+          <i class="fas fa-envelope fa-2x"></i>
+        </a>
+        <!-- LinkedIn -->
+        <a href="https://www.linkedin.com/in/jun-nammoku-445492349/" target="_blank" rel="noopener noreferrer" class="mx-3" title="LinkedIn">
+          <i class="fab fa-linkedin fa-2x"></i>
+        </a>
+        <!-- GitHub -->
+        <a href="https://github.com/Jun-engineer" target="_blank" rel="noopener noreferrer" class="mx-3" title="GitHub">
+          <i class="fab fa-github fa-2x"></i>
+        </a>
+      </p>
+      <p>Please feel free to reach out with any inquiries or collaboration ideas!</p>
+    </div>
+  </section>
+
+  <!-- Scroll to Top Button -->
+  <button id="scrollTopBtn" class="btn btn-primary">&uarr;</button>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Jun Nammoku. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Custom JavaScript -->
+  <script>
+    // Scroll to Top Button functionality
+    const scrollTopBtn = document.getElementById('scrollTopBtn');
+    window.addEventListener('scroll', () => {
+      scrollTopBtn.style.display = window.pageYOffset > 300 ? 'block' : 'none';
+    });
+    scrollTopBtn.addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  </script>
+</body>
+</html>
+
