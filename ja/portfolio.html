@@ -1,16 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 <head>
+  <!-- Favicon -->
+  <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/1077/1077063.png" type="image/png">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Jun Nammoku | Portfolio</title>
+  <title>南木 潤 | ポートフォリオ</title>
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <style>
     body {
-      font-family: Arial, sans-serif;
+      font-family: "Hiragino Mincho ProN", "Yu Mincho", "ＭＳ Ｍincho", serif;
       background: #f4f4f4;
     }
     .section {
@@ -44,6 +46,17 @@
       max-height: 300px;
       object-fit: cover;
     }
+    /* Language Switcher */
+    .language-switcher {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+    }
+    .language-switcher a {
+      margin-left: 10px;
+      text-decoration: none;
+      color: #007bff;
+    }
   </style>
 </head>
 
@@ -51,27 +64,38 @@
   <!-- Responsive Navbar -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container">
-      <a class="navbar-brand" href="#">Jun Nammoku</a>
+      <a class="navbar-brand" href="#">南木 潤</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
-              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              aria-controls="navbarNav" aria-expanded="false" aria-label="ナビゲーションを切り替える">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item">
-            <a class="nav-link" href="#about">About</a>
+            <a class="nav-link" href="#about">自己紹介</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#skills">Skills</a>
+            <a class="nav-link" href="#skills">スキル</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#certifications">Certifications</a>
+            <a class="nav-link" href="#certifications">資格</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#projects">Projects</a>
+            <a class="nav-link" href="#projects">プロジェクト</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#contact">Contact</a>
+            <a class="nav-link" href="#contact">お問い合わせ</a>
+          </li>
+          <!-- Language Dropdown -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="languageDropdown" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              Language
+            </a>
+            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="languageDropdown">
+              <li><a class="dropdown-item" href="../en/portfolio.html">English</a></li>
+              <li><a class="dropdown-item" href="../ja/portfolio.html">日本語</a></li>
+            </ul>
           </li>
         </ul>
       </div>
@@ -81,11 +105,12 @@
   <!-- About Section -->
   <section id="about" class="section">
     <div class="container text-center">
-      <h2>About Me</h2>
+      <h2>自己紹介</h2>
       <p class="lead">
-        I'm Jun Nammoku, cloud engineer with 3 years' experience architecting AWS environments.<br>
-        I specialize in infrastructure as Code (CDK & CloudFormation), Network, and security.<br>
-        I am also passionate about continuous learning and staying updated with the latest cloud technologies.<br>
+        はじめまして、南木 潤（なんもく じゅん）です。<br>
+        AWS環境の設計を3年間担当してきました。<br>
+        Infrastructure as Code（CDK／CloudFormation）をはじめ、ネットワーク構築やセキュリティ強化が得意分野です。<br>
+        インフラ技術やプログラミング言語等問わず、常に最新の技術を学び、自己研鑽に努めています。
       </p>
     </div>
   </section>
@@ -94,8 +119,7 @@
   <section id="skills" class="section bg-light">
     <div class="container">
       <div class="text-center mb-5">
-        <h2>Skills</h2>
-        <p class="lead">A snapshot of my technical expertise and proficiencies.</p>
+        <h2>スキル</h2>
       </div>
       <div class="row">
         <!-- Skill Category 1: Frontend Development -->
@@ -104,18 +128,10 @@
             <div class="card-body">
               <h5 class="card-title">Frontend Development</h5>
               <ul class="list-unstyled">
-                <li>
-                  HTML5
-                </li>
-                <li>
-                  CSS3 / Bootstrap
-                </li>
-                <li>
-                  JavaScript
-                </li>
-                <li>
-                  React / Next.js
-                </li>
+                <li>HTML5</li>
+                <li>CSS3 / Bootstrap</li>
+                <li>JavaScript</li>
+                <li>React / Next.js</li>
               </ul>
             </div>
           </div>
@@ -126,12 +142,8 @@
             <div class="card-body">
               <h5 class="card-title">Backend Development</h5>
               <ul class="list-unstyled">
-                <li>
-                  Node.js
-                </li>
-                <li>
-                  Golang
-                </li>
+                <li>Node.js</li>
+                <li>Golang</li>
               </ul>
             </div>
           </div>
@@ -142,18 +154,10 @@
             <div class="card-body">
               <h5 class="card-title">Cloud & DevOps</h5>
               <ul class="list-unstyled">
-                <li>
-                  AWS CDK
-                </li>
-                <li>
-                  AWS CloudFormation
-                </li>
-                <li>
-                  Git
-                </li>
-                <li>
-                  Docker
-                </li>
+                <li>AWS CDK</li>
+                <li>AWS CloudFormation</li>
+                <li>Git</li>
+                <li>Docker</li>
               </ul>
             </div>
           </div>
@@ -164,21 +168,11 @@
             <div class="card-body">
               <h5 class="card-title">Infrastructure & Tools</h5>
               <ul class="list-unstyled">
-                <li>
-                  Linux
-                </li>
-                <li>
-                  Networking
-                </li>
-                <li>
-                  Security
-                </li>
-                <li>
-                  PowerShell
-                </li>
-                <li>
-                  PowerPlatform
-                </li>
+                <li>Linux</li>
+                <li>Networking</li>
+                <li>Security</li>
+                <li>PowerShell</li>
+                <li>PowerPlatform</li>
               </ul>
             </div>
           </div>
@@ -191,8 +185,7 @@
   <section id="certifications" class="section bg-light">
     <div class="container">
       <div class="text-center mb-5">
-        <h2>Certifications</h2>
-        <p class="lead">Professional certifications and achievements.</p>
+        <h2>資格</h2>
       </div>
       <div class="row">
         <!-- Certification Card -->
@@ -387,19 +380,18 @@
   <section id="projects" class="section bg-light">
     <div class="container">
       <div class="text-center mb-5">
-        <h2>Projects</h2>
-        <p class="lead">Here are some projects I've worked on.</p>
+        <h2>プロジェクト</h2>
       </div>
       <div class="row">
         <!-- Portfolio Repository Card -->
         <div class="col-12">
           <div class="card mb-4 shadow-sm">
-            <img src="./photo/portfolio.jpg" class="card-img-top" alt="Portfolio Screenshot">
+            <img src="../photo/portfolio.jpg" class="card-img-top" alt="Portfolio Screenshot">
             <div class="card-body">
-              <h5 class="card-title">My Portfolio</h5>
+              <h5 class="card-title">ポートフォリオ</h5>
               <p class="card-text">
-                Language: HTML / Bootstrap / CSS / JavaScript<br>
-                This site is built with a focus on responsiveness and modern design.
+                言語: HTML / Bootstrap / CSS / JavaScript<br>
+                このサイトは、レスポンシブデザインとモダンなデザインに重点を置いて構築しています。
               </p>
               <a href="https://github.com/Jun-engineer/portfolio" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
                 View Portfolio Repository
@@ -410,13 +402,13 @@
         <!-- Project Card 1 -->
         <div class="col-12">
           <div class="card mb-4 shadow-sm">
-            <img src="./photo/bar.jpg" class="card-img-top" alt="Japanese Bar Homepage">
+            <img src="../photo/bar.jpg" class="card-img-top" alt="Japanese Bar Homepage">
             <div class="card-body">
-              <h5 class="card-title">Japanese Bar Homepage</h5>
+              <h5 class="card-title">スポーツバーのホームページ</h5>
               <p class="card-text">
-                Language: Next.js (JavaScript) / AWS CDK (TypeScript)<br>
-                Hosting: AWS S3 / Amazon CloudFront<br>
-                Features: Delivers a high‑performance, SEO‑friendly static website with modern, responsive design and globally distributed assets via AWS CloudFront, all provisioned and managed through infrastructure as code with AWS CDK.<br>
+                言語: Next.js (JavaScript) / AWS CDK (TypeScript)<br>
+                ホスティングサービス: AWS S3 / Amazon CloudFront<br>
+                機能: 最新のレスポンシブデザインとグローバルに分散された AWS CloudFront 経由のアセットを備えた、高性能かつ SEO 対応の静的ウェブサイトを提供し、すべて AWS CDK を用いた Infrastructure as Code でプロビジョニングおよび管理しています。<br>
               </p>
               <a href="https://d207y99b8y9l85.cloudfront.net/" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
                 Visit Web App
@@ -430,14 +422,14 @@
         <!-- Project Card 2 -->
         <div class="col-12">
           <div class="card mb-4 shadow-sm">
-            <img src="./photo/inventory_management_system.jpg" class="card-img-top" alt="Inventory / Order Management System">
+            <img src="../photo/inventory_management_system.jpg" class="card-img-top" alt="Inventory / Order Management System">
             <div class="card-body">
-              <h5 class="card-title">Inventory / Order / Cost Management System</h5>
+              <h5 class="card-title">受発注・在庫管理システム</h5>
               <p class="card-text">
-                Language: Next.js (TypeScript) / Gin (Golang)<br>
-                Database: PostgreSQL<br>
-                Hosting: Vercel (Frontend) / GCP CloudRun (Backend) / Neon (Database)<br>
-                Features: Provides a multi‑tenant platform for enterprise inventory and order management with real‑time stock tracking, inter‑company order workflows, and integrated cost analysis dashboards.<br>
+                言語: Next.js (TypeScript) / Gin (Golang)<br>
+                データベース: PostgreSQL<br>
+                ホスティングサービス: Vercel (Frontend) / GCP CloudRun (Backend) / Neon (Database)<br>
+                機能: リアルタイムの在庫追跡、社内間の注文フロー、統合されたコスト分析ダッシュボードを備えた、企業向け在庫・受発注管理のためのマルチテナント・プラットフォームを提供します。<br>
               </p>
               <a href="https://inventory-management-sooty-zeta.vercel.app" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
                 Visit Web App
@@ -498,8 +490,10 @@
   <!-- Contact Section -->
   <section id="contact" class="section">
     <div class="container text-center">
-      <h2>Contact</h2>
-      <p class="lead">I'd love to hear from you!</p>
+      <h2>お問い合わせ</h2>
+      <p class="lead">
+        ご質問やお仕事の依頼がありましたら、以下の連絡先までお気軽にご連絡ください。
+      </p>
       <p>
         <!-- Email -->
         <a href="mailto:jun.drums.1102@gmail.com" class="mx-3" title="Email">
@@ -514,7 +508,6 @@
           <i class="fab fa-github fa-2x"></i>
         </a>
       </p>
-      <p>Please feel free to reach out with any inquiries or collaboration ideas!</p>
     </div>
   </section>
 
@@ -543,4 +536,3 @@
   </script>
 </body>
 </html>
-
