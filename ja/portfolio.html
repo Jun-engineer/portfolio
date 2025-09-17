@@ -412,9 +412,9 @@
             <div class="card-body">
               <h5 class="card-title">スポーツバーのホームページ</h5>
               <p class="card-text">
-                言語: Next.js (JavaScript) / AWS CDK (TypeScript)<br>
-                ホスティングサービス: AWS S3 / Amazon CloudFront<br>
-                機能・特徴: 最新のレスポンシブデザインとグローバルに分散された AWS CloudFront 経由のアセットを備えた、高性能かつ SEO 対応の静的ウェブサイトを提供し、すべて AWS CDK を用いた Infrastructure as Code でプロビジョニングおよび管理しています。<br>
+                言語: Next.js (JavaScript, Pages Router, SSG) / AWS CDK (TypeScript)<br>
+                ホスティングサービス: Amazon S3 (private origin) + Amazon CloudFront (Origin Access Control), automated via GitHub Actions (OIDC)<br>
+                機能・特徴: 静的エクスポートと事前レンダリング済みの動的ルートで高速表示を実現。レスポンシブかつアクセシブル(ARIA対応)なUI、SEO(sitemap.xml・robots.txt・canonical / OG・lang=ja)を整備。CloudFrontのグローバルCDNで配信し、更新時はキャッシュを自動無効化。インフラはAWS CDKでコード管理し、ポリシーはcdk-nagで点検済み。<br>
               </p>
               <a href="https://d207y99b8y9l85.cloudfront.net/" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
                 Visit Web App
@@ -497,7 +497,7 @@
               <p class="card-text">
                 言語: FastAPI (Python 3.11) / Next.js 14 (TypeScript, React 18, SSR/SSG) / REST API<br>
                 データベース: PostgreSQL (FTS with GIN indexes)<br>
-                ホスティング: Vercel (Frontend) / Fly.io (API) / Neon (Database)<br>
+                ホスティングサービス: Vercel (Frontend) / Fly.io (API) / Neon (Database)<br>
                 機能・特徴: バイリンガル用語とスターターガイド (EN/JA) をタグと翻訳レビューのメタデータとともに提供; PostgreSQL FTS を介した高速検索とハイライトされたスニペット; JWT ベースのエディタ認証; モダンな Next.js UI とともに文書化された REST API (OpenAPI/Swagger); シードデータと Alembic マイグレーション; Docker 化された開発環境とヘルスチェック済みのデプロイ; ルートマッピングを伴う永続的な言語選択。<br>
               </p>
               <a href="https://sports-rules-companion.vercel.app" class="btn btn-primary" target="_blank" rel="noopener noreferrer">

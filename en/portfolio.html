@@ -413,9 +413,9 @@
             <div class="card-body">
               <h5 class="card-title">Japanese Bar Homepage</h5>
               <p class="card-text">
-                Language: Next.js (JavaScript) / AWS CDK (TypeScript)<br>
-                Hosting: AWS S3 / Amazon CloudFront<br>
-                Features: Delivers a high‑performance, SEO‑friendly static website with modern, responsive design and globally distributed assets via AWS CloudFront, all provisioned and managed through infrastructure as code with AWS CDK.<br>
+                Language: Next.js (JavaScript, Pages Router, SSG) / AWS CDK (TypeScript)<br>
+                Hosting: Amazon S3 (private origin) + Amazon CloudFront (Origin Access Control), automated via GitHub Actions (OIDC)<br>
+                Features: Static export with pre‑rendered dynamic routes, responsive and accessible UI (ARIA), SEO (sitemap.xml, robots.txt, canonical/OG, lang=ja), global CDN caching with automated invalidation; infrastructure fully managed as code with AWS CDK and cdk‑nag–reviewed policies<br>
               </p>
               <a href="https://d207y99b8y9l85.cloudfront.net/" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
                 Visit Web App
