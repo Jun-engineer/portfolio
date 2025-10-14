@@ -386,109 +386,134 @@
   <section id="projects" class="section bg-light">
     <div class="container">
       <div class="text-center mb-5">
-        <h2>個人開発プロジェクト</h2>
+        <h2>個人プロジェクト</h2>
+        <p class="lead">これまで個人で取り組んできたプロジェクトです。</p>
       </div>
       <div class="row">
-        <!-- Portfolio Repository Card -->
+        <!-- ポートフォリオ -->
         <div class="col-12">
           <div class="card mb-4 shadow-sm">
-            <img src="../photo/portfolio.jpg" class="card-img-top" alt="Portfolio Screenshot">
+            <img src="../photo/portfolio.jpg" class="card-img-top" alt="ポートフォリオ">
             <div class="card-body">
-              <h5 class="card-title">ポートフォリオ</h5>
+              <h5 class="card-title">ポートフォリオサイト</h5>
               <p class="card-text">
                 言語: HTML / Bootstrap / CSS / JavaScript<br>
-                特徴：レスポンシブデザインとモダンなデザインに重点を置いて構築しています。
+                データベース: 該当なし (静的サイト)<br>
+                ホスティング: GitHub Pages<br>
+                機能・特徴: 経歴・スキル・資格・プロジェクトを日英対応で紹介し、レスポンシブなレイアウトとスムーズなナビゲーションを備えています。<br>
               </p>
               <a href="https://github.com/Jun-engineer/portfolio" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
-                View Portfolio Repository
+                ポートフォリオのリポジトリを見る
               </a>
             </div>
           </div>
         </div>
-        <!-- Project Card 1 -->
+        <!-- Idea Bridge -->
         <div class="col-12">
           <div class="card mb-4 shadow-sm">
-            <img src="../photo/bar.jpg" class="card-img-top" alt="Japanese Bar Homepage">
+            <img src="../photo/idea_bridge.jpg" class="card-img-top" alt="Idea Bridge">
             <div class="card-body">
-              <h5 class="card-title">スポーツバーのホームページ</h5>
+              <h5 class="card-title">Idea Bridge</h5>
               <p class="card-text">
-                言語: Next.js (JavaScript, Pages Router, SSG) / AWS CDK (TypeScript)<br>
-                ホスティングサービス: Amazon S3 (private origin) + Amazon CloudFront (Origin Access Control), automated via GitHub Actions (OIDC)<br>
-                機能・特徴: 静的エクスポートと事前レンダリング済みの動的ルートで高速表示を実現。レスポンシブかつアクセシブル(ARIA対応)なUI、SEO(sitemap.xml・robots.txt・canonical / OG・lang=ja)を整備。CloudFrontのグローバルCDNで配信し、更新時はキャッシュを自動無効化。インフラはAWS CDKでコード管理し、ポリシーはcdk-nagで点検済み。<br>
+                言語: React (TypeScript) / Express (TypeScript)<br>
+                データベース: PostgreSQL (Prisma) + DynamoDB バックの認証ストア<br>
+                ホスティング: AWS CloudFront + S3 (フロントエンド) / AWS Lambda + API Gateway (バックエンド) / Expo EAS (モバイル)<br>
+                機能・特徴: アイデア提供者と開発者を結びつけるプラットフォームで、キュレーションされたアイデアフィード、投稿ワークフロー、リッチなプロフィール、SMS 認証、アカウント管理、サーバーレス CI/CD を備えています。<br>
+              </p>
+              <a href="https://d3lq35g6m29rn7.cloudfront.net" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
+                Web アプリを見る
+              </a>
+              <a href="https://github.com/Jun-engineer/idea-bridge" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">
+                GitHub リポジトリ
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- 日本のバー ホームページ -->
+        <div class="col-12">
+          <div class="card mb-4 shadow-sm">
+            <img src="../photo/bar.jpg" class="card-img-top" alt="日本のバー ホームページ">
+            <div class="card-body">
+              <h5 class="card-title">日本のバー ホームページ</h5>
+              <p class="card-text">
+                言語: HTML / Bootstrap / CSS / JavaScript<br>
+                データベース: 該当なし (静的サイト)<br>
+                ホスティング: GitHub Pages<br>
+                機能・特徴: 日英の二言語でメニューや店舗情報を紹介し、完全レスポンシブな構成でバーの魅力を発信するマーケティングサイトです。<br>
               </p>
               <a href="https://d207y99b8y9l85.cloudfront.net/" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
-                Visit Web App
+                Web アプリを見る
               </a>
               <a href="https://github.com/Jun-engineer/heros-bar" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">
-                GitHub Repo
+                GitHub リポジトリ
               </a>
             </div>
           </div>
         </div>
-        <!-- Project Card 2 -->
+        <!-- 在庫・受発注・原価管理システム -->
         <div class="col-12">
           <div class="card mb-4 shadow-sm">
-            <img src="../photo/inventory_management_system.jpg" class="card-img-top" alt="Inventory / Order Management System">
+            <img src="../photo/inventory_management_system.jpg" class="card-img-top" alt="在庫管理システム">
             <div class="card-body">
-              <h5 class="card-title">受発注・在庫管理システム</h5>
+              <h5 class="card-title">在庫・受発注・原価管理システム</h5>
               <p class="card-text">
                 言語: Next.js (TypeScript) / Gin (Golang)<br>
                 データベース: PostgreSQL<br>
-                ホスティングサービス: Vercel (Frontend) / GCP CloudRun (Backend) / Neon (Database)<br>
-                機能・特徴: リアルタイムの在庫追跡、社内間の注文フロー、統合されたコスト分析ダッシュボードを備えた、企業向け在庫・受発注管理のためのマルチテナント・プラットフォームを提供します。<br>
+                ホスティング: Vercel (フロントエンド) / GCP Cloud Run (バックエンド) / Neon (データベース)<br>
+                機能・特徴: マルチテナント対応で在庫・受発注・原価を一括管理し、リアルタイム在庫追跡、社内間ワークフロー、ダッシュボード分析を提供します。<br>
               </p>
               <a href="https://inventory-management-sooty-zeta.vercel.app" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
-                Visit Web App
+                Web アプリを見る
               </a>
               <a href="https://github.com/Jun-engineer/inventory-management" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">
-                GitHub Repo
+                GitHub リポジトリ
               </a>
             </div>
           </div>
         </div>
-        <!-- Project Card 3 -->
+        <!-- サブスクリプション支出管理 -->
         <div class="col-12">
           <div class="card mb-4 shadow-sm">
-            <img src="../photo/subscription_expenses_manager.jpg" class="card-img-top" alt="Subscription Expenses Manager">
+            <img src="../photo/subscription_expenses_manager.jpg" class="card-img-top" alt="サブスクリプション支出管理">
             <div class="card-body">
-              <h5 class="card-title">サブスクコスト管理アプリ</h5>
+              <h5 class="card-title">サブスクリプション支出管理</h5>
               <p class="card-text">
                 言語: Next.js (TypeScript) / FastAPI (Python)<br>
                 データベース: PostgreSQL<br>
-                ホスティングサービス: Vercel (Frontend) / GCP Cloud Run (Backend) / Neon (Database)<br>
-                機能・特徴: サブスクリプションと経費を管理し、月単位の正確な定期請求、ダッシュボードのインサイト、今後の支払い通知、セキュアなクッキーに基づく認証を提供します。<br>
+                ホスティング: Vercel (フロントエンド) / GCP Cloud Run (バックエンド) / Neon (データベース)<br>
+                機能・特徴: 月単位の課金周期でサブスクリプションを管理し、ダッシュボード分析や支払いリマインダー、Cookie ベース認証による安全なアクセス制御を提供します。<br>
               </p>
               <a href="https://subscription-expenses-manager.vercel.app/" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
-                Visit Web App
+                Web アプリを見る
               </a>
               <a href="https://github.com/Jun-engineer/subscription-expenses-manager" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">
-                GitHub Repo
+                GitHub リポジトリ
               </a>
             </div>
           </div>
         </div>
-        <!-- Project Card 4 -->
+        <!-- Knowledge Tracker -->
         <div class="col-12">
           <div class="card mb-4 shadow-sm">
             <img src="../photo/knowledge_tracker.jpg" class="card-img-top" alt="Knowledge Tracker">
             <div class="card-body">
-              <h5 class="card-title">学習リソース管理アプリ</h5>
+              <h5 class="card-title">Knowledge Tracker</h5>
               <p class="card-text">
-                言語: Spring Boot 3 (Java 17) / Thymeleaf (Server‑Rendered HTML) / REST API<br>
+                言語: Spring Boot 3 (Java 17) / Thymeleaf (サーバーレンダリング HTML) / REST API<br>
                 データベース: PostgreSQL<br>
-                ホスティングサービス: GCP Cloud Run (App) / Neon (Database)<br>
-                機能・特徴: 学習リソースをタグ、ステータス、お気に入り、時間ログで追跡; 高速検索 (PostgreSQL FTS)、CSVエクスポート、ダッシュボードインサイト; HttpOnlyクッキーとリフレッシュトークンを使用したセキュアなJWT認証; クリーンなサーバーサイドレンダリングページと文書化されたREST API (OpenAPI/Swagger); ゴミ箱/復元機能を備えたソフトデリート<br>
+                ホスティング: GCP Cloud Run (アプリ) / Neon (データベース)<br>
+                機能・特徴: 学習リソースをタグ・ステータス・お気に入り・学習時間で管理し、FTS 検索、CSV エクスポート、ダッシュボード、JWT 認証、REST API ドキュメント、ソフトデリートと復元機能を備えています。<br>
               </p>
               <a href="https://knowledge-tracker-458410750257.asia-northeast1.run.app" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
-                Visit Web App
+                Web アプリを見る
               </a>
               <a href="https://github.com/Jun-engineer/knowledge-tracker" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">
-                GitHub Repo
+                GitHub リポジトリ
               </a>
             </div>
           </div>
         </div>
-        <!-- Project Card 5 -->
+        <!-- Sports Rules Companion -->
         <div class="col-12">
           <div class="card mb-4 shadow-sm">
             <img src="../photo/sports-rules-companion.jpg" class="card-img-top" alt="Sports Rules Companion">
@@ -496,15 +521,15 @@
               <h5 class="card-title">スポーツ用語・ルール辞典</h5>
               <p class="card-text">
                 言語: FastAPI (Python 3.11) / Next.js 14 (TypeScript, React 18, SSR/SSG) / REST API<br>
-                データベース: PostgreSQL (FTS with GIN indexes)<br>
-                ホスティングサービス: Vercel (Frontend) / Fly.io (API) / Neon (Database)<br>
-                機能・特徴: バイリンガル用語とスターターガイド (EN/JA) をタグと翻訳レビューのメタデータとともに提供; PostgreSQL FTS を介した高速検索とハイライトされたスニペット; JWT ベースのエディタ認証; モダンな Next.js UI とともに文書化された REST API (OpenAPI/Swagger); シードデータと Alembic マイグレーション; Docker 化された開発環境とヘルスチェック済みのデプロイ; ルートマッピングを伴う永続的な言語選択。<br>
+                データベース: PostgreSQL (FTS + GIN インデックス)<br>
+                ホスティング: Vercel (フロントエンド) / Fly.io (API) / Neon (データベース)<br>
+                機能・特徴: 翻訳レビューのメタデータ付き英日用語とスターターガイドを提供し、ハイライト付き FTS 検索、JWT 認証、REST API ドキュメント、Alembic マイグレーション、Docker 化開発、ルートマッピングによる言語選択保持を実装しています。<br>
               </p>
               <a href="https://sports-rules-companion.vercel.app" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
-                Visit Web App
+                Web アプリを見る
               </a>
               <a href="https://github.com/Jun-engineer/sports-rules-companion" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">
-                GitHub Repo
+                GitHub リポジトリ
               </a>
             </div>
           </div>

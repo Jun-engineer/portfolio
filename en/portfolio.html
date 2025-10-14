@@ -390,7 +390,7 @@
         <p class="lead">Here are some projects I've worked on by myself.</p>
       </div>
       <div class="row">
-        <!-- Portfolio Repository Card -->
+        <!-- My Portfolio -->
         <div class="col-12">
           <div class="card mb-4 shadow-sm">
             <img src="../photo/portfolio.jpg" class="card-img-top" alt="Portfolio Screenshot">
@@ -398,7 +398,9 @@
               <h5 class="card-title">My Portfolio</h5>
               <p class="card-text">
                 Language: HTML / Bootstrap / CSS / JavaScript<br>
-                This site is built with a focus on responsiveness and modern design.
+                Database: N/A (Static site)<br>
+                Hosting: GitHub Pages<br>
+                Features: This portfolio showcases professional history, skills, certifications, and projects with responsive layouts and bilingual navigation.<br>
               </p>
               <a href="https://github.com/Jun-engineer/portfolio" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
                 View Portfolio Repository
@@ -406,16 +408,38 @@
             </div>
           </div>
         </div>
-        <!-- Project Card 1 -->
+        <!-- Idea Bridge -->
+        <div class="col-12">
+          <div class="card mb-4 shadow-sm">
+            <img src="../photo/idea_bridge.jpg" class="card-img-top" alt="Idea Bridge">
+            <div class="card-body">
+              <h5 class="card-title">Idea Bridge</h5>
+              <p class="card-text">
+                Language: React (TypeScript) / Express (TypeScript)<br>
+                Database: PostgreSQL (Prisma) with DynamoDB-backed verification store<br>
+                Hosting: AWS CloudFront + S3 (Frontend) / AWS Lambda via API Gateway (Backend) / Expo EAS (Mobile clients)<br>
+                Features: This platform connects idea creators and builders through curated idea feeds, submission workflows, rich profiles, SMS phone verification, account management, and an extensible serverless CI/CD architecture.<br>
+              </p>
+              <a href="https://d3lq35g6m29rn7.cloudfront.net" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
+                Visit Web App
+              </a>
+              <a href="https://github.com/Jun-engineer/idea-bridge" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">
+                GitHub Repo
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- Japanese Bar Homepage -->
         <div class="col-12">
           <div class="card mb-4 shadow-sm">
             <img src="../photo/bar.jpg" class="card-img-top" alt="Japanese Bar Homepage">
             <div class="card-body">
               <h5 class="card-title">Japanese Bar Homepage</h5>
               <p class="card-text">
-                Language: Next.js (JavaScript, Pages Router, SSG) / AWS CDK (TypeScript)<br>
-                Hosting: Amazon S3 (private origin) + Amazon CloudFront (Origin Access Control), automated via GitHub Actions (OIDC)<br>
-                Features: Static export with pre‑rendered dynamic routes, responsive and accessible UI (ARIA), SEO (sitemap.xml, robots.txt, canonical/OG, lang=ja), global CDN caching with automated invalidation; infrastructure fully managed as code with AWS CDK and cdk‑nag–reviewed policies<br>
+                Language: HTML / Bootstrap / CSS / JavaScript<br>
+                Database: N/A (Static site)<br>
+                Hosting: GitHub Pages<br>
+                Features: This marketing site introduces a Japanese bar with bilingual content, menu highlights, location details, and contact information in a fully responsive layout.<br>
               </p>
               <a href="https://d207y99b8y9l85.cloudfront.net/" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
                 Visit Web App
@@ -426,7 +450,7 @@
             </div>
           </div>
         </div>
-        <!-- Project Card 2 -->
+        <!-- Inventory / Order / Cost Management System -->
         <div class="col-12">
           <div class="card mb-4 shadow-sm">
             <img src="../photo/inventory_management_system.jpg" class="card-img-top" alt="Inventory / Order Management System">
@@ -435,8 +459,8 @@
               <p class="card-text">
                 Language: Next.js (TypeScript) / Gin (Golang)<br>
                 Database: PostgreSQL<br>
-                Hosting: Vercel (Frontend) / GCP CloudRun (Backend) / Neon (Database)<br>
-                Features: Provides a multi‑tenant platform for enterprise inventory and order management with real‑time stock tracking, inter‑company order workflows, and integrated cost analysis dashboards.<br>
+                Hosting: Vercel (Frontend) / GCP Cloud Run (Backend) / Neon (Database)<br>
+                Features: This multi-tenant platform centralizes inventory, order, and cost management with real-time stock tracking, inter-company workflows, and analytical dashboards.<br>
               </p>
               <a href="https://inventory-management-sooty-zeta.vercel.app" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
                 Visit Web App
@@ -447,7 +471,7 @@
             </div>
           </div>
         </div>
-        <!-- Project Card 3 -->
+        <!-- Subscription Expenses Manager -->
         <div class="col-12">
           <div class="card mb-4 shadow-sm">
             <img src="../photo/subscription_expenses_manager.jpg" class="card-img-top" alt="Subscription Expenses Manager">
@@ -457,7 +481,7 @@
                 Language: Next.js (TypeScript) / FastAPI (Python)<br>
                 Database: PostgreSQL<br>
                 Hosting: Vercel (Frontend) / GCP Cloud Run (Backend) / Neon (Database)<br>
-                Features: Manage subscriptions and expenses with month‑accurate recurring billing, dashboard insights, upcoming payment notifications, and secure cookie‑based authentication.<br>
+                Features: This application tracks recurring subscriptions with month-accurate billing cycles, delivers dashboard insights, sends payment reminders, and secures accounts with cookie-based authentication.<br>
               </p>
               <a href="https://subscription-expenses-manager.vercel.app/" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
                 Visit Web App
@@ -468,17 +492,17 @@
             </div>
           </div>
         </div>
-        <!-- Project Card 4 -->
+        <!-- Knowledge Tracker -->
         <div class="col-12">
           <div class="card mb-4 shadow-sm">
             <img src="../photo/knowledge_tracker.jpg" class="card-img-top" alt="Knowledge Tracker">
             <div class="card-body">
               <h5 class="card-title">Knowledge Tracker</h5>
               <p class="card-text">
-                Language: Spring Boot 3 (Java 17) / Thymeleaf (Server‑Rendered HTML) / REST API<br>
+                Language: Spring Boot 3 (Java 17) / Thymeleaf (Server-Rendered HTML) / REST API<br>
                 Database: PostgreSQL<br>
                 Hosting: GCP Cloud Run (App) / Neon (Database)<br>
-                Features: Track learning resources with tags, statuses, favorites, and time logs; fast search (PostgreSQL FTS), CSV export, and dashboard insights; secure JWT authentication with HttpOnly cookies and refresh tokens; clean server‑rendered pages plus a documented REST API (OpenAPI/Swagger); soft delete with trash/restore.<br>
+                Features: This system organizes learning resources with tags, statuses, favorites, and time logs while providing FTS search, CSV export, dashboards, JWT-secured sessions, a documented REST API, and soft delete with restore workflows.<br>
               </p>
               <a href="https://knowledge-tracker-458410750257.asia-northeast1.run.app" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
                 Visit Web App
@@ -489,7 +513,7 @@
             </div>
           </div>
         </div>
-        <!-- Project Card 5 -->
+        <!-- Sports Rules Companion -->
         <div class="col-12">
           <div class="card mb-4 shadow-sm">
             <img src="../photo/sports-rules-companion.jpg" class="card-img-top" alt="Sports Rules Companion">
@@ -499,7 +523,7 @@
                 Language: FastAPI (Python 3.11) / Next.js 14 (TypeScript, React 18, SSR/SSG) / REST API<br>
                 Database: PostgreSQL (FTS with GIN indexes)<br>
                 Hosting: Vercel (Frontend) / Fly.io (API) / Neon (Database)<br>
-                Features: Bilingual terms and starter guides (EN/JA) with tags and translation review metadata; fast search via PostgreSQL FTS with highlighted snippets; JWT-based editor authentication; documented REST API (OpenAPI/Swagger) alongside a modern Next.js UI; seed data and Alembic migrations; Dockerized dev and health-checked deploys; persistent language selection with route mapping.<br>
+                Features: This companion provides bilingual terms and starter guides with translation review metadata, delivers FTS search with highlighted snippets, secures editing with JWT authentication, documents its REST API, seeds data with Alembic, supports Dockerized development, and persists language choices via route mapping.<br>
               </p>
               <a href="https://sports-rules-companion.vercel.app" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
                 Visit Web App
